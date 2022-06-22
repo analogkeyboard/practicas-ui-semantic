@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    
+    <title>Ejercicio 11.2.-Modal Con Imagen</title>
+</head>
+<body>
+   <div class="ui container">
+       <div class="ui modal">
+           <div class="header">Foto</div>
+           <div class="image content">
+              <div class="ui small image">
+               <img src="https://semantic-ui.com/images/avatar2/large/rachel.png" alt="" class=" mini image">
+                  
+              </div>
+               <div class="description"></div>
+           </div>
+           
+       </div>
+   </div>
+    <script>
+    //
+        
+        $('.ui.modal').modal('show');
+     // $(document).ready(Function(){$('#my-modal').modal('show');});  
+    </script>
+</body>
+</html>

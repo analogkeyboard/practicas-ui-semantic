@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!--google charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Ejercicio 17.-Panel Administrativo</title>
+</head>
+
+<body>
+    <div class="ui container fluid">
+        <div class="ui menu stackable fixed inverted">
+            <a href="#" class="active item">
+                <i class="home icon"></i>
+            </a>
+            <a href="" class="item">
+                <i class="info icon"></i>
+            </a>
+            <div class="right menu">
+                <div class="ui dropdown item">
+                    Lenguaje <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="" class="item">Español</a>
+                        <a href="" class="item">Ruso</a>
+                        <a href="" class="item">Ingles</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <div class="item">
+                    <div class="ui icon top left pointing dropdown primary button">
+                        <i class="wrench icon"></i>
+                        <div class="menu">
+
+                            <div class="item">
+
+                                <i class="user icon"></i>
+                                Perfil
+                            </div>
+                            <div class="item">
+                                <i class="setting icon"></i>
+                                Configuracion
+                            </div>
+                            <div class="item">
+                                <i class="window close icon"></i>
+                                Salir
+                            </div>
+                            <div class="item">
+                                <i class="window close icon"></i>
+                                Salir
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="ui grid stackable">
+
+            <!--contenido central-->
+            <div class="two wide column black">
+                <div class="ui vertical labeled icon menu inverted">
+                    <a href="index.html" class="item">
+                        <i class="dashboard icon"></i>
+                        Escritorio
+                    </a>
+                    <a href="graficas.html" class="item">
+                        <i class="bar chart icon"></i>
+                        Graficas
+                    </a>
+                    <a href="tablas.html" class="item">
+                        <i class="table icon"></i>
+                        Tablas
+                    </a>
+                    <a href="formularios.html" class="item">
+                        <i class="browser icon"></i>
+                        Formularios
+                    </a>
+                    <a href="pagina.html" class="item">
+                        <i class="file outline icon"></i>
+                        Ejemplo de pagina
+                    </a>
+                    <a href="elementos.html" class="item">
+                        <i class="setting icon"></i>
+                        Elementos UI
+                    </a>
+
+                </div>
+            </div>
+            <!--contenido central-->
+            <div class="fourteen wide column">
+                <div class="ui equal width grid stackable">
+                    <div class="column">
+                        <div class="ui segment">
+                            <div class="ui info message">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    ¿Era esto lo que querias?
+                                </div>
+
+                                <ul class="list">
+                                    <li>
+                                        Es bueno verte de nuevo.
+                                    </li>
+                                    <li>
+                                        ¿Sabias que ha pasado algun tiempo?.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ui positive message">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Eres elegible para un premio
+                                </div>
+                                <p>
+                                    Ve a la <b>pagina de ofertas especiales</b> para verlo ahora.
+                                </p>
+
+
+                            </div>
+                            <div class="ui error message">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Hubo algunos errores con tu peticion
+                                </div>
+                                <ul>
+                                    <li class="list">
+                                        Debes incluir letras mayusculas y minusculas en tu contraseña.
+                                    </li>
+                                    <li class="list">
+                                        Debes seleccionar tu pais de origen.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="ui button">Boton Primario</div>
+                            <br><br>
+                            <div class="ui primary button">Boton Primario</div>
+                            <br><br>
+                            <div class="ui secondary button">Boton Secundario</div>
+                            <br><br>
+                            <div class="ui button">Opcion 1</div>
+                            <br><br>
+                            <div class="ui basic button">Boton Basico</div>
+                            <br><br>
+                            <label for="">Or</label><br><br>
+                            <div class="ui buttons">
+
+                                <div class="ui positive button">Aceptar</div>
+                                <span class="or"></span>
+                                <div class="ui negative button">Cancelar</div>
+
+                            </div>
+
+                            <br><br>
+                            <label for="">Or en español</label><br><br>
+                            <div class="ui buttons">
+                                <div class="ui positive button">Aceptar</div>
+                                <div class="or" data-text="o"></div>
+                                <div class="ui negative button">Cancelar</div>
+
+                            </div>
+                            <br><br>
+                            <label for="">Or con texto distinto</label><br><br>
+                            <div class="ui buttons">
+                                <div class="ui positive button">Aceptar</div>
+                                <br><br>
+                                <div class="or" data-text="elige"></div>
+                                <div class="ui negative button">Cancelar</div>
+
+                            </div><br><br>
+                            <div class="ui disabled button">Boton Desactivado</div>
+                            <br><br>
+                            <label for="">Redes Sociales</label>
+                            <br><br>
+                            <button class="ui facebook button">
+                                <i class="facebook icon"></i>
+                                Facebook
+                            </button>
+                            <button class="ui twitter button">
+                                <i class="twitter icon"></i>
+                                Twitter
+                            </button>
+                            <button class="ui google plus button">
+                                <i class="google plus icon"></i>
+                                Google Plus
+                            </button>
+
+                            <button class="ui youtube button">
+                                <i class="youtube icon"></i>
+                                YouTube
+                            </button>
+                            <br><br>
+                            <div class="ui mini button">mini</div>
+                            <div class="ui massive button">massive</div>
+                            <div class="ui medium button">medium</div>
+                            <div class="ui small button">small</div>
+                            <div class="ui large button">large</div>
+                            <br><br>
+                            <div class="ui red button">
+                            <i class="paypal icon"></i>
+                             red
+                            </div>
+                            <div class="ui teal button">teal</div>
+                            <div class="ui green button">green</div>
+                            <div class="ui blue button">blue</div>
+                            <br><br>
+                            <div class="ui massive buttons">
+                                
+                            <div class="ui red button">red</div>
+                                <div class="or"></div>
+                            <div class="ui green basic button">green</div>
+                                <div class="or"></div>
+                                
+                            <div class="ui blue button">blue</div>
+                            </div>
+                            
+                            <h2 class="header">Paneles</h2>
+                            <div class="column">
+                                <div class="ui top attached error message">
+                                    Error
+                                </div>
+                                <div class="ui bottom attached segment">
+                                    Panel Content
+                                </div>
+                                
+                            </div>
+                            
+                            <h2 class="header">Listas</h2>
+                            <div class="ui list">
+                                <div class="item">
+                                    <img src="img/jenny.jpg" alt="" class="ui avatar image">
+                                    <div class="content">
+                                        <a href="" class="header">Jenny</a>
+                                        <div class="description">
+                                        Ultima vez vista <a href=""><b> Hamburguesas bob </b> </a>Hace 10 horas.
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <img src="img/elliot.jpg" alt="" class="ui avatar image">
+                                    <div class="content">
+                                        <a href="" class="header">Elliot</a>
+                                        <div class="description">
+                                        Ultima vez vista <a href=""><b> Bajo Arresto </b> </a>Just ahora.
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <img src="img/matt.jpg" alt="" class="ui avatar image">
+                                    <div class="content">
+                                        <a href="" class="header">Matt</a>
+                                        <div class="description">
+                                        Ultima vez vista <a href=""><b> El padrino 2 </b> </a>Hace 2 horas.
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <img src="img/justen.jpg" alt="" class="ui avatar image">
+                                    <div class="content">
+                                        <a href="" class="header">Justen</a>
+                                        <div class="description">
+                                        Ultima vez vista <a href=""><b> Centro comercial </b> </a>Hace 1 hora.
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <img src="img/christian.jpg" alt="" class="ui avatar image">
+                                    <div class="content">
+                                        <a href="" class="header">Christian</a>
+                                        <div class="description">
+                                        Ultima vez vista <a href=""><b> Crepusculo </b> </a>Hace 24 horas.
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
+</body></html>

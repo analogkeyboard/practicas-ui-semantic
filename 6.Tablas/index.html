@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios 6.- Tablas</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui container">
+         <div class="ui block inverted center aligned header">
+            Tablas y Celdas
+            <div class="ui sub dividing header">
+                Ejemplos de tablas con celdas
+            </div>
+        </div>
+        <h3>Tabla con colores invertidos</h3>
+        <table class="ui inverted celled padded table">
+            <thead>
+                <tr>
+                    <td>Col 2</td>
+                    <td>Col 3</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="ui ribbon label ">
+                            Valor 1
+                        </div>
+                    </td>
+                    <td>Valor 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Resultado 1</td>
+                    <td>Resultado 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!----------------->
+    <br>
+    <br>
+    <br>
+    <div class="ui container">
+        <h3>Tabla con color azul invertido y renglones seleccionables</h3>
+        <table class="ui  celled padded table selectable stripped blue inverted">
+            <thead>
+                <tr>
+                    <td class="positive">Col 1</td>
+                    <td class="negative">Col 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="warning">
+                    <td>Valor 1</td>
+                    <td>Valor 2</td>
+                </tr>
+                <tr class="disabled">
+                    <td>Valor 3</td>
+                    <td>Valor 4</td>
+                </tr>
+                <tr>
+                    <td>Valor 5</td>
+                    <td>Valor 6</td>
+                </tr>
+                <tr>
+                    <td>Valor 5</td>
+                    <td>Valor 6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Resultado 1</td>
+                    <td>Resultado 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

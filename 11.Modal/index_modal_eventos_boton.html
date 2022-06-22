@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+      <!-- Jquery local-->
+      
+    <script src=".\..\semantic-ui-files\jquery-3.6.0.js"></script>
+    
+    <!-- semantic css local-->
+    <link rel="stylesheet" href=".\..\semantic-ui-files\semantic.css">
+    
+    <!-- css local -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- semantic js local -->
+    <script src=".\..\semantic-ui-files\semantic.js"></script>
+    
+    <title>Ejercicio 11.3.-Modal Con Botones</title>
+</head>
+<body>
+    <div class="ui container">
+       <div class="ui modal">
+           <div class="header">Foto</div>
+           <div class="image content">
+              <div class="ui small image">
+               <img src="https://semantic-ui.com/images/avatar2/large/rachel.png" alt="" class=" mini image">
+                  
+              </div>
+               <div class="description">
+                   <p>
+                       Soy un contenido
+                   </p>
+               </div>
+           </div>
+           <div class="actions">
+               <div class="ui red button" id="no">No</div>
+               <div class="ui yellow button" id="si">Si</div>
+           </div>
+       </div>
+       <br><br>
+       <button 
+       id="Abrir"
+        class="ui red inverted massive button">
+           Abrir Modal
+       </button>
+   </div>
+    <script>
+    //
+        $('#Abrir').click(function(){
+          
+        $('.ui.modal').modal('show');
+          });
+        $('#no').click(function(){
+          
+        $('.ui.modal').modal('hide');
+          });
+        
+          $('#si').click(function(){
+          
+       alert("Salir");
+          });
+     // $(document).ready(Function(){$('#my-modal').modal('show');});  
+    </script>
+</body>
+</html>

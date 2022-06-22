@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    
+    <title>Ejercicio 12.-Dropdown</title>
+</head>
+<body>
+   <div class="ui container">
+       <div class="ui dropdown">
+           <div class="text">Juegos</div>
+           <i class="hand point down icon"></i>
+
+           <div class="menu">
+               <div class="item">Item 1</div>
+               <div class="item">
+                  Item 2
+                   <span class="description">desc 2</span>
+               </div>
+               
+           </div>
+       </div>
+       <br><br>
+       <div class="ui compact search dropdown" id="search">
+          <input type="hidden">
+           <div class="default text">Lenguajes</div>
+           <i class="hand point down icon"></i>
+
+           <div class="menu">
+               <div class="item" data-value="java">java</div>
+               <div class="item" data-value="javascript">javascript</div>
+               <div class="item" data-value="angular">angular</div>
+               <div class="item" data-value="react">react</div>
+               <div class="item" data-value="python">python</div>
+               
+           </div>
+       </div>
+       
+       <br><br>
+       
+       <div class="ui selection multiple dropdown " id="seleccion" multiple="" >
+        <div class="default text">Lenguajes con imagenes</div>
+          <i class="dropdown icon"></i>  
+           
+               <div class="menu">
+                   
+           <div class="item" data-value="angular">
+           <img class="ui image avatar" src="Imagenes/Angular.png" alt="">
+           
+           angular</div>
+           <div class="item" data-value="aspnet">
+           <img src="Imagenes/aspnet.png" alt="">
+           aspnet</div>
+           
+           <div class="item" data-value="java">
+           <img src="Imagenes/java.png" alt="">
+           java</div>
+           <div class="item" data-value="javascript">
+           <img src="Imagenes/JavaScript.png" alt="">
+           javascript</div>
+           <div class="item" data-value="php">
+           <img src="Imagenes/php.png" alt="">
+           php</div>
+           <div class="item" data-value="react">
+           <img src="Imagenes/React.png" alt="">
+           react</div>
+       
+               </div>
+           </div>
+   </div>
+    <script>
+        
+        $('.ui.dropdown').dropdown();
+        $('#seleccion').dropdown();
+        $('#search').dropdown();
+     // $(document).ready(Function(){$('#my-modal').modal('show');});  
+    </script>
+</body>
+</html>

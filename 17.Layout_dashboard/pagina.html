@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!--google charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Ejercicio 17.-Panel Administrativo</title>
+</head>
+
+<body>
+    <div class="ui container fluid">
+        <div class="ui menu stackable fixed inverted">
+            <a href="#" class="active item">
+                <i class="home icon"></i>
+            </a>
+            <a href="" class="item">
+                <i class="info icon"></i>
+            </a>
+            <div class="right menu">
+                <div class="ui dropdown item">
+                    Lenguaje <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="" class="item">Español</a>
+                        <a href="" class="item">Ruso</a>
+                        <a href="" class="item">Ingles</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <div class="item">
+                    <div class="ui icon top left pointing dropdown primary button">
+                        <i class="wrench icon"></i>
+                        <div class="menu">
+
+                            <div class="item">
+
+                                <i class="user icon"></i>
+                                Perfil
+                            </div>
+                            <div class="item">
+                                <i class="setting icon"></i>
+                                Configuracion
+                            </div>
+                            <div class="item">
+                                <i class="window close icon"></i>
+                                Salir
+                            </div>
+                            <div class="item">
+                                <i class="window close icon"></i>
+                                Salir
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="ui grid stackable">
+
+            <!--contenido central-->
+            <div class="two wide column black">
+                <div class="ui vertical labeled icon menu inverted">
+                    <a href="index.html" class="item">
+                        <i class="dashboard icon"></i>
+                        Escritorio
+                    </a>
+                    <a href="graficas.html" class="item">
+                        <i class="bar chart icon"></i>
+                        Graficas
+                    </a>
+                    <a href="tablas.html" class="item">
+                        <i class="table icon"></i>
+                        Tablas
+                    </a>
+                    <a href="formularios.html" class="item">
+                        <i class="browser icon"></i>
+                        Formularios
+                    </a>
+                    <a href="pagina.html" class="item">
+                        <i class="file outline icon"></i>
+                        Ejemplo de pagina
+                    </a>
+                    <a href="elementos.html" class="item">
+                        <i class="setting icon"></i>
+                        Elementos UI
+                    </a>
+
+                </div>
+            </div>
+            <!--contenido central-->
+            <div class="fourteen wide column">
+                <div class="ui equal width grid stackable">
+                    <div class="column">
+                        <div class="ui segment">
+                           <h2 class="ui header">Titulo de Pagina</h2>
+                            <div class="content">
+                                
+                           <img class="ui small left image" src="img/text-image.png" alt="">
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit erat a lectus auctor, at fringilla nisl viverra. Sed vestibulum dolor in ultricies congue. Sed egestas neque nec lorem sodales, eget semper odio blandit. Donec urna purus, accumsan eu dictum et, finibus eu diam. Duis gravida dapibus risus, quis placerat tortor dignissim vitae. Nullam sed nulla enim. Morbi consequat mi vulputate sagittis posuere. Duis vel eros congue quam fermentum laoreet tincidunt non massa. Quisque nisi neque, luctus a dui nec, sagittis egestas leo. Nunc mattis elit risus. Etiam rhoncus massa lobortis mattis fermentum. Maecenas a mauris nec sapien elementum interdum sed sed dolor. Aenean pretium turpis nisi, vitae vulputate tellus scelerisque eu. Pellentesque vel diam ac elit maximus lacinia. Praesent nec nunc quis nunc bibendum hendrerit at sed neque.
+                           </p>
+                           <img class="ui small right floated image" src="img/text-image.png" alt="">
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit erat a lectus auctor, at fringilla nisl viverra. Sed vestibulum dolor in ultricies congue. Sed egestas neque nec lorem sodales, eget semper odio blandit. Donec urna purus, accumsan eu dictum et, finibus eu diam. Duis gravida dapibus risus, quis placerat tortor dignissim vitae. Nullam sed nulla enim. Morbi consequat mi vulputate sagittis posuere. Duis vel eros congue quam fermentum laoreet tincidunt non massa. Quisque nisi neque, luctus a dui nec, sagittis egestas leo. Nunc mattis elit risus. Etiam rhoncus massa lobortis mattis fermentum. Maecenas a mauris nec sapien elementum interdum sed sed dolor. Aenean pretium turpis nisi, vitae vulputate tellus scelerisque eu. Pellentesque vel diam ac elit maximus lacinia. Praesent nec nunc quis nunc bibendum hendrerit at sed neque.
+                           </p>
+                           <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit erat a lectus auctor, at fringilla nisl viverra. Sed vestibulum dolor in ultricies congue. Sed egestas neque nec lorem sodales, eget semper odio blandit.
+                           </p>
+                           
+                           <h2 class="header"></h2>
+                           <img class="ui mini image bordered rounded" src="img/image.png" alt="">
+                           <br>
+                           <img class="ui tiny image bordered rounded" src="img/image.png" alt="">
+                           <br>
+                           <img class="ui small image bordered rounded" src="img/image.png" alt="">
+                           <br>
+                           <h2 class="header">Contenido con borde</h2>
+                           <div class="ui inverted segment">
+                               <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit erat a lectus auctor, at fringilla nisl viverra. Sed vestibulum dolor in ultricies congue. Sed egestas neque nec lorem sodales, eget semper odio blandit. Donec urna purus, accumsan eu dictum et, finibus eu diam. Duis gravida dapibus risus, quis placerat tortor dignissim vitae. Nullam sed nulla enim. Morbi consequat mi vulputate sagittis posuere. Duis vel eros congue quam fermentum laoreet tincidunt non massa. Quisque nisi neque, luctus a dui nec, sagittis egestas leo. Nunc mattis elit risus. Etiam rhoncus massa lobortis mattis fermentum. Maecenas a mauris nec sapien elementum interdum sed sed dolor. Aenean pretium turpis nisi, vitae vulputate tellus scelerisque eu. Pellentesque vel diam ac elit maximus lacinia. Praesent nec nunc quis nunc bibendum hendrerit at sed neque.
+                               </p>
+                           </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+               
+        </div>
+    </div>
+
+    <script>
+        $('.ui.dropdown').dropdown();
+
+    </script>
+</body>
+
+</html>
